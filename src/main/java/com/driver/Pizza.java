@@ -28,37 +28,37 @@ public class Pizza {
         return this.price;
     }
 
-    public void addExtraCheese(Boolean isCheeseAddedOnce){
+    public void addExtraCheese(/*Boolean isCheeseAddedOnce*/){
         // your code goes here
-        this.isCheeseAddedOnce=isCheeseAddedOnce;
-        if(isCheeseAddedOnce==false)
+        //this.isCheeseAddedOnce=isCheeseAddedOnce;
+        if(this.isCheeseAddedOnce==false)
         {
             price+=80;
-            isCheeseAddedOnce=true;
+            this.isCheeseAddedOnce=true;
         }
         
     }
 
-    public void addExtraToppings(Boolean isToppingsAddedOnce){
+    public void addExtraToppings(/*Boolean isToppingsAddedOnce*/){
         // your code goes here
-        this.isToppingsAddedOnce=isToppingsAddedOnce;
-        if(isToppingsAddedOnce==false)
+        //this.isToppingsAddedOnce=isToppingsAddedOnce;
+        if(this.isToppingsAddedOnce==false)
         {
             if(this.isVeg==true)
                 price+=70;
             else
                 price+=120;
-            isToppingsAddedOnce=true;
+            this.isToppingsAddedOnce=true;
         }
     }
 
-    public void addTakeaway(Boolean isTakeAwayAddedOnce){
+    public void addTakeaway(/*Boolean isTakeAwayAddedOnce*/){
         // your code goes here
-        this.isTakeAwayAddedOnce=isTakeAwayAddedOnce;
-        if(isTakeAwayAddedOnce==false)
+        //this.isTakeAwayAddedOnce=isTakeAwayAddedOnce;
+        if(this.isTakeAwayAddedOnce==false)
         {
             price+=20;
-            isTakeAwayAddedOnce=true;
+            this.isTakeAwayAddedOnce=true;
         }
     }
 
